@@ -2,9 +2,8 @@ console.log('test');
 
 //longerString takes to strings return the longer one
 function longerString() {
-  var string1 = $(".string1").val();
-  var string2 = $(".string2").val();
-  console.log('button clicked - longerString');
+  var string1 = $(".string1").val().replace(/ /g, '');
+  var string2 = $(".string2").val().replace(/ /g, '');
   console.log(string1, string2);
 
   //compare strings
