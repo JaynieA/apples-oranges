@@ -6,10 +6,13 @@ function longerString(string1, string2) {
   console.log(string1, string2);
 
   //compare strings
+
   if(string1.length > string2.length){
     alert(string1 + " is longest");
     return string1;
-  }else{
+  } else if  (string1.length === string2.length) {
+    alert("strings are equal");
+  } else {
     alert(string2 + " is longest");
     return string2;
   }
