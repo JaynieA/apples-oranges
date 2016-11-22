@@ -1,7 +1,9 @@
 console.log('test');
 
 //longerString takes to strings return the longer one
-function longerString(string1, string2) {
+function longerString() {
+  var string1 = $(".string1").val();
+  var string2 = $(".string2").val();
   console.log('button clicked - longerString');
   console.log(string1, string2);
 
