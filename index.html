@@ -2,15 +2,20 @@
 <html>
   <head>
     <title>apples and oranges</title>
-    <script src="script.js" charset="utf-8"></script>
-    <script src="jjquery.js" charset="utf-8"></script>
+    <script src="js/vendors/jquery.min.js" charset="utf-8"></script>
+    <script src="js/scripts/script.js" charset="utf-8"></script>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
-    <form onsubmit="longerString()">
-      <input type="text" class="string1"/>
-      <input type="text" class="string2"/>
-      <input type="submit"  />
-    </form>
-
+    <div class="container text-center">
+      <h1>apples and oranges</h1>
+      <form id="applesOrangesForm" class="form-inline">
+        <input type="text" class="string1 form-control" placeholder="word 1" required/>
+        <label>vs.</label>
+        <input type="text" class="string2 form-control" placeholder="word 2" required/>
+        <input type="submit"  class="btn btn-primary"/>
+      </form>
+    </div>
   </body>
 </html>
